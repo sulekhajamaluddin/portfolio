@@ -1,0 +1,26 @@
+/*Colors*/
+
+:root {
+  --color-moss-green: #addfad;
+  --color-purple: #912db4;
+  --color-purple-title: rgba(145, 45, 180, 0.8);
+  --color-pastel-orange: #f89880;
+  --color-powder-blue: #b0e0e6;
+  --color-pink-orange: #ffdacc;
+  --color-olive-green: rgba(69, 87, 37, 0.5);
+  --color-grey: rgb(69, 60, 60);
+}
+
+/*Space*/
+
+:root {
+  --space-small: 8px;
+  --space-medium: 16px;
+  --space-big: 32px;
+}
+
+/*Others*/
+
+:root {
+  --text-paragraph: 22px;
+}

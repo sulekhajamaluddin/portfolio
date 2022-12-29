@@ -1,0 +1,16 @@
+/*Base*/
+@import "./base/variables.css";
+@import "./base/layout.css";
+@import "./base/typography.css";
+
+/*Components*/
+@import "./components/Navbar.css";
+@import "./components/Hero.css";
+@import "./components/About.css";
+@import "./components/Projects.css";
+@import "./components/Card.css";
+@import "./components/Technologies.css";
+@import "./components/TechCard.css";
+@import "./components/Modal.css";
+@import "./components/Contact.css";
+@import "./components/ProjectDetails.css";

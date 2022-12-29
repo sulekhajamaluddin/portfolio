@@ -1,0 +1,32 @@
+.navbar {
+  width: 100vw;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px var(--space-big);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+.navbar__logo {
+  width: 105px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.navbar__links {
+  width: 430px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar__links a {
+  text-decoration: none;
+  font-size: var(--text-paragraph);
+  color: var(--color-purple);
+  cursor: pointer;
+}
