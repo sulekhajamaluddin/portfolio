@@ -1,10 +1,12 @@
 .hero {
+  width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: #faf9f6;
+  background-color: var(--color-white-pale);
 }
 
 .hero__section-one {
+  width: 100vw;
   height: 60vh;
   background-color: var(--color-moss-green);
 }
@@ -14,9 +16,9 @@
 }
 
 .hero__frame-holder {
-  position: absolute;
   width: 750px;
   height: 400px;
+  position: absolute;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -25,14 +27,14 @@
 .hero__frame {
   width: 750px;
   height: 400px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(25px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(10, 10, 10, 0.25);
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-radius: 15px;
-  backdrop-filter: blur(25px);
-  box-shadow: 10px 10px 10px rgba(10, 10, 10, 0.25);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,7 +43,6 @@
 }
 
 .hero__frame h1 {
-  color: var(--color-purple-title);
   color: var(--color-grey);
 }
 
@@ -67,7 +68,7 @@
   width: 400px;
   height: 450px;
   position: absolute;
-  right: 200px;
+  right: 210px;
   bottom: 0px;
   z-index: 20;
 }
@@ -121,5 +122,87 @@
 
 .circle-6 {
   top: 15%;
-  right: -2%;
+  right: 2%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .hero {
+    width: 100vw;
+    background-color: var(--color-moss-green);
+    position: relative;
+  }
+
+  .hero__frame-holder {
+    width: 325px;
+    height: 250px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .hero__frame {
+    width: 325px;
+    height: 250px;
+    background-color: var(--color-white-pale);
+  }
+
+  .hero__image {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 10%;
+    bottom: 20%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 1279px) {
+  .hero__section-one {
+    display: none;
+  }
+
+  .hero__section-two {
+    display: none;
+  }
+
+  .hero__circle-one,
+  .hero__circle-two {
+    display: none;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .hero__small-circle {
+    display: none;
+  }
+
+  .hero__medium-circle {
+    display: none;
+  }
+
+  .circle-1 {
+    display: none;
+  }
+
+  .circle-2 {
+    display: none;
+  }
+
+  .circle-3 {
+    display: none;
+  }
+
+  .circle-4 {
+    display: none;
+  }
+
+  .circle-5 {
+    display: none;
+  }
+
+  .circle-6 {
+    display: none;
+  }
 }

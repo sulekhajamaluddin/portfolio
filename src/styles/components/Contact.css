@@ -1,31 +1,28 @@
 .footer {
   height: 60vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--color-white-pale);
 }
 
 .footer__section-one {
   width: 100vw;
   height: 85%;
-  padding-top: 80px;
-  padding-left: 100px;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer__content {
   width: 40vw;
+  height: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.footer__content h2 {
-  text-align: left;
-}
-
-.footer__content p {
-  text-align: left;
 }
 
 .footer__contact-holder {
@@ -36,7 +33,7 @@
 }
 
 .footer__contact-list {
-  width: auto;
+  width: 250px;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -46,13 +43,67 @@
 .contact-item {
   display: flex;
   align-items: center;
+  gap: 20px;
+}
+
+.contact-item img {
+  width: 45px;
+  height: 45px;
 }
 
 .footer__section-two {
   width: 100vw;
-  height: 90px;
+  height: 80px;
   background-color: var(--color-moss-green);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.network-icon {
+  height: 20px;
+  width: 20px;
+  margin: 1px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .footer {
+    height: auto;
+  }
+  .footer__section-one {
+    height: auto;
+    flex-direction: column;
+  }
+  .footer__content {
+    width: 100vw;
+    height: 150px;
+    margin-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .footer__contact-holder {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__contact-list {
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .contact-item {
+    width: 50%;
+  }
+
+  .contact-item img {
+    width: 20px;
+    height: 20px;
+  }
 }

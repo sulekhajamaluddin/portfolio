@@ -5,14 +5,7 @@ export default function Projects({ setModal }) {
   const projectsList = projectDetails.map((project) => {
     return (
       <li key={project.projectID}>
-        <Card
-          cssClass={project.status}
-          project={project}
-          // imgSrc={project.projectCardImage}
-          // altText={project.imageCardDescription}
-          // projectName={project.projectName}
-          setModal={setModal}
-        />
+        <Card cssClass={project.status} project={project} setModal={setModal} />
       </li>
     );
   });
@@ -27,7 +20,6 @@ export default function Projects({ setModal }) {
             will build during the frontend course at Novare Potential
           </p>
         </div>
-        {/* <div className="projects__vertical-line"></div> */}
       </div>
       <div className="projects__section-two">
         <ul className="projects__card-holder">{projectsList}</ul>

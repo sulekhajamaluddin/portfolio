@@ -1,4 +1,8 @@
-export default function ProjectDetails({ project }) {
+export default function ProjectDetails({ project, setModal }) {
+  const handleCloseModal = () => {
+    setModal(null);
+  };
+
   const arrayOfPills = project.technologiesUsed.map((pill, index) => (
     <span className="pill" key={index}>
       {pill}
@@ -11,17 +15,32 @@ export default function ProjectDetails({ project }) {
         <img src={project.projectImage} alt={project.projectImageDescription} />
       </div>
       <div className="project-item__section-two">
-        <h3>{project.projectName}</h3>
-        <p>{project.projectDescription}</p>
-        {arrayOfPills}
-        <a
-          href="https://eika-shopping-wishlist.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button>Visit Website/App</button>
-        </a>
-        <button>Git Repository</button>
+        <div>
+          <h3>{project.projectName}</h3>
+          <p>{project.projectDescription}</p>
+          <div className="project-item__pills">{arrayOfPills}</div>
+          <button className="close-button" onClick={() => handleCloseModal()}>
+            X
+          </button>
+        </div>
+        <div className="project-item__links">
+          <a
+            className="button"
+            href={project.webAddress}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="primary">Visit Website/App</button>
+          </a>
+          <a
+            className="button"
+            href={project.gitAddress}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="secondary">Git Repository</button>
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import email from "../assets/email-icon.png";
 import phone from "../assets/phone-icon.png";
 import location from "../assets/location-icon.png";
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Contact() {
   return (
@@ -30,7 +32,25 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="footer__section-two"></div>
+      <div className="footer__section-two">
+        <div>
+          <a
+            href="https://github.com/sulekhajamaluddin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillGithub className="network-icon" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/sulekha-jamaluddin-582665237/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillLinkedin className="network-icon" />
+          </a>
+        </div>
+        <small>&copy; 2022.SulekhaJamaluddin</small>
+      </div>
     </div>
   );
 }

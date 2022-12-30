@@ -1,15 +1,8 @@
 import ProjectDetails from "./ProjectDetails";
 
-export default function Card({
-  cssClass,
-  // imgSrc,
-  // altText,
-  // projectName,
-  setModal,
-  project,
-}) {
+export default function Card({ cssClass, setModal, project }) {
   const handleModal = (project) => {
-    setModal(<ProjectDetails project={project} />);
+    setModal(<ProjectDetails project={project} setModal={setModal} />);
     // setModal(null);
   };
 

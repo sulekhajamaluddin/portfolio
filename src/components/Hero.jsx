@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="hero__frame">
           <h1>
             Hi, I am Sulekha Jamaluddin,
-            <br /> a frontend developer from India.
+            <br /> a passionate frontend developer.
           </h1>
         </div>
         <img

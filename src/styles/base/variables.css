@@ -3,12 +3,10 @@
 :root {
   --color-moss-green: #addfad;
   --color-purple: #912db4;
-  --color-purple-title: rgba(145, 45, 180, 0.8);
-  --color-pastel-orange: #f89880;
-  --color-powder-blue: #b0e0e6;
+  --color-purple-light: rgba(212, 159, 232, 0.7);
   --color-pink-orange: #ffdacc;
-  --color-olive-green: rgba(69, 87, 37, 0.5);
-  --color-grey: rgb(69, 60, 60);
+  --color-grey: #453c3c;
+  --color-white-pale: #faf9f6;
 }
 
 /*Space*/
@@ -23,4 +21,5 @@
 
 :root {
   --text-paragraph: 22px;
+  --text-paragraph-mobile: 17px;
 }

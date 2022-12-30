@@ -18,6 +18,8 @@ const projectDetails = [
     projectImage: `${eikaproject}`,
     projectImageDescription: "The screenshot of eika app running on website",
     technologiesUsed: ["React", "CSS", "ContextAPI", "Local Storage", "UID"],
+    webAddress: "https://eika-shopping-wishlist.netlify.app/",
+    gitAddress: "https://github.com/sulekhajamaluddin/shopping-list",
     status: "completed",
   },
   {

@@ -16,7 +16,19 @@
 
 .project-item__section-two {
   width: 50%;
+  height: 100%;
   padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item__section-two h3 {
+  padding: 10px 0px;
+}
+
+.project-item__section-two p {
+  padding: 10px 0px;
 }
 
 .pill {
@@ -26,4 +38,82 @@
   border: 1px solid black;
   margin: 5px;
   padding: 5px;
+}
+
+.close-button {
+  background-color: var(--color-white-pale);
+  width: 35px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  font-size: inherit;
+}
+
+.project-item__pills {
+  padding: 10px 0px;
+  width: 100%;
+  height: 50px;
+}
+
+.project-item__links {
+  margin-top: auto;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-item__links button,
+.project-item__links .button {
+  height: 50px;
+  width: 280px;
+  border-radius: 5px;
+}
+
+.project-item__links .button {
+  background-color: none;
+  border: none;
+}
+
+.primary {
+  border: 1px solid white;
+  background-color: var(--color-purple-light);
+}
+
+.secondary {
+  border: 1px solid white;
+  background-color: white;
+}
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .project-item {
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+  }
+
+  .project-item__section-one {
+    width: 100%;
+    height: 45%;
+  }
+
+  .project-item__section-two {
+    width: 100%;
+    height: 65%;
+  }
+
+  .pill {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+  }
+
+  .close-button {
+    top: -80%;
+    background-color: var(--color-pink-orange);
+  }
 }

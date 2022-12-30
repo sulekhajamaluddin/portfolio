@@ -19,7 +19,7 @@ function App() {
       <Projects setModal={setModal} />
       <Technologies />
       <Contact />
-      <Modal modal={modal} />
+      <Modal modal={modal} setModal={setModal} />
     </div>
   );
 }

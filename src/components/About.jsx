@@ -3,7 +3,7 @@ export default function About() {
     <div className="about" id="about">
       <div className="about__section-one">
         <div className="about__content">
-          <h2>ABOUT</h2>
+          <h2>ABOUT ME</h2>
           <p>
             I am Sulekha, an IT engineer by education following my passion to
             get back to the field after a little adventure in the world of
@@ -15,7 +15,9 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="about__section-two"></div>
+      <div className="about__section-two">
+        <div className="frame"></div>
+      </div>
     </div>
   );
 }
