@@ -20,7 +20,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 20px;
 }
 
 .about__section-two {
@@ -35,12 +34,22 @@
 .frame {
   width: 625px;
   height: 690px;
-  background-color: var(--color-purple-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (min-width: 375px) and (max-width: 768px) {
+.frame__pic {
+  height: 90%;
+  width: 90%;
+}
+
+/*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
+
+/*Media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .about {
-    width: 100vw;
     height: auto;
     flex-direction: column;
   }
@@ -48,30 +57,55 @@
   .about__section-one {
     order: 2;
     width: 100vw;
+    height: auto;
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 50px;
   }
 
   .about__content {
     width: 95%;
-    justify-content: center;
+    height: 450px;
+    justify-content: space-evenly;
   }
 
   .about__content h2 {
-    margin-bottom: 15px;
+    margin-top: 15px;
   }
 
   .about__section-two {
     width: 100%;
     height: auto;
-    margin-top: 40px;
-    align-items: flex-start;
+    margin-top: 75px;
+    margin-bottom: 10px;
   }
 
   .frame {
     width: 350px;
     height: 350px;
+    background-color: var(--color-purple-light);
+  }
+}
+
+/*Tablet*/
+
+/*Ipad Mini, Ipad Air, Surface Pro 7*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about__section-one {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .about__content {
+    width: 250px;
+    height: 400px;
+  }
+
+  .about__content h2 {
+    margin-bottom: 30px;
+  }
+
+  .frame {
     background-color: var(--color-purple-light);
   }
 }

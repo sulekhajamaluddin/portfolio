@@ -8,7 +8,6 @@
   border-radius: 20px;
   background: none;
   cursor: pointer;
-  /* background-color: rgb(255, 255, 255); */
 }
 
 .tech-card {
@@ -27,4 +26,20 @@
 .tech-card div {
   width: 100%;
   padding: 10px;
+}
+
+/*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
+
+/*Media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .tech-card-button {
+    width: 100px;
+    height: 150px;
+  }
+
+  .tech-card__icon {
+    width: 50px;
+    height: 50px;
+  }
 }

@@ -1,3 +1,5 @@
+import profilepic from "../assets/womanwithpuzzle.png";
+
 export default function About() {
   return (
     <div className="about" id="about">
@@ -9,14 +11,16 @@ export default function About() {
             get back to the field after a little adventure in the world of
             administration. I am very much motivated by frontend development.
             This is my website that I use to showcase the work I do. <br />I
-            like to explore and bring together minimalistic designs with a sense
-            of responsibility and give them a signature touch. Scroll on, let me
-            show you some of them.
+            like to explore and bring together minimalistic design pieces
+            together with a sense of responsibility and give them a signature
+            touch. Scroll on, let me show you some of them.
           </p>
         </div>
       </div>
       <div className="about__section-two">
-        <div className="frame"></div>
+        <div className="frame">
+          <img className="frame__pic" src={profilepic} alt="A person" />
+        </div>
       </div>
     </div>
   );

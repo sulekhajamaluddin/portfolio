@@ -1,6 +1,7 @@
 import email from "../assets/email-icon.png";
 import phone from "../assets/phone-icon.png";
 import location from "../assets/location-icon.png";
+import ContactItem from "./ContactItem";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 
@@ -17,18 +18,21 @@ export default function Contact() {
         </div>
         <div className="footer__contact-holder">
           <div className="footer__contact-list">
-            <div className="contact-item">
-              <img src={email} alt="The icon representing email" />
-              <span>sulu.lekha@gmail.com</span>
-            </div>
-            <div className="contact-item">
-              <img src={phone} alt="The icon representing phone" />
-              <span>+46 769726924</span>
-            </div>
-            <div className="contact-item">
-              <img src={location} alt="The icon representing location" />
-              <span>Stockholm, Sweden</span>
-            </div>
+            <ContactItem
+              iconSrc={email}
+              altText="The icon representing email"
+              text="sulu.lekha@gmail.com"
+            />
+            <ContactItem
+              iconSrc={phone}
+              altText="The icon representing phone"
+              text="+46 769726924"
+            />
+            <ContactItem
+              iconSrc={location}
+              altText="The icon representing location"
+              text="Stockholm, Sweden"
+            />
           </div>
         </div>
       </div>
