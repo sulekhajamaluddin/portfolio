@@ -24,6 +24,7 @@ export default function ProjectDetails({ project, setModal }) {
           </button>
         </div>
         <div className="project-item__links">
+          {/* I think that the noopener noreferrer is not longer needed, as it does not trigger warnings anymore in React 18 */}
           <a
             className="button"
             href={project.webAddress}

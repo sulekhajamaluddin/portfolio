@@ -6,6 +6,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Contact() {
+  // duplication. you created Contact item but you are manually copy and pasting 3 copies of it instead of using an json array
   return (
     <div className="footer" id="footer">
       <div className="footer__section-one">

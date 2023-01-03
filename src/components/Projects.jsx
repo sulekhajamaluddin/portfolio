@@ -2,6 +2,7 @@ import { ProjectCard } from "../components/";
 import projectDetails from "../data/project-details";
 
 export default function Projects({ setModal }) {
+  // dont wrap project card in li, put the li in project card directly
   const projectsList = projectDetails.map((project) => {
     return (
       <li key={project.projectID}>

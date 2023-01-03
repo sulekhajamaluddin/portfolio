@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "./styles/styles.css";
 import Navbar from "../src/components/Navbar";
 import Hero from "../src/components/Hero";
@@ -8,6 +9,7 @@ import Technologies from "../src/components/Technologies";
 import Modal from "../src/components/Modal";
 import Contact from "../src/components/Contact";
 
+// rename App.js to app.jsx, make it 1 line export
 function App() {
   const [modal, setModal] = useState(null);
 
