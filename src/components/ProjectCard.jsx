@@ -6,26 +6,28 @@ export default function ProjectCard({ cssClass, setModal, project }) {
   };
 
   return (
-    <button
-      className="project-card"
-      disabled={`${cssClass}` === "comingSoon" ? true : false}
-      onClick={() => handleModal(project)}
-    >
-      {cssClass === "comingSoon" && (
-        <div className="overlay">
-          <p>COMING SOON...</p>
+    <div key={project.projectID}>
+      <button
+        className="project-card"
+        disabled={`${cssClass}` === "comingSoon" ? true : false}
+        onClick={() => handleModal(project)}
+      >
+        {cssClass === "comingSoon" && (
+          <div className="overlay">
+            <p>COMING SOON...</p>
+          </div>
+        )}
+        <div className={`card ${cssClass}`}>
+          <img
+            className="card__image"
+            src={project.projectCardImage}
+            alt={project.imageCardDescription}
+          />
+          <div>
+            <p>{project.projectName}</p>
+          </div>
         </div>
-      )}
-      <div className={`card ${cssClass}`}>
-        <img
-          className="card__image"
-          src={project.projectCardImage}
-          alt={project.imageCardDescription}
-        />
-        <div>
-          <p>{project.projectName}</p>
-        </div>
-      </div>
-    </button>
+      </button>
+    </div>
   );
 }
