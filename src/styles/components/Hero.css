@@ -22,6 +22,7 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 
 .hero__frame {
@@ -111,6 +112,7 @@
 .circle-4 {
   bottom: 20%;
   right: 50%;
+  z-index: 5;
 }
 
 .circle-5 {
