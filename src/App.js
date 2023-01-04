@@ -8,7 +8,7 @@ import Technologies from "../src/components/Technologies";
 import Modal from "../src/components/Modal";
 import Contact from "../src/components/Contact";
 
-function App() {
+export default function App() {
   const [modal, setModal] = useState(null);
 
   return (
@@ -23,5 +23,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

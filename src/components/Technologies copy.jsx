@@ -1,19 +1,20 @@
 import TechCard from "./TechCard";
 import techDetails from "../data/tech-details";
 
-const TechList = techDetails.map((tech) => {
+const techList = techDetails.map((tech) => {
   return (
-    <TechCard
-      key={tech.techID}
-      techName={tech.techName}
-      imgSrc={tech.techIcon}
-      altText={tech.iconDescription}
-    />
+    <li key={tech.techID}>
+      <TechCard
+        techName={tech.techName}
+        imgSrc={tech.techIcon}
+        altText={tech.iconDescription}
+      />
+    </li>
   );
 });
 export default function Technologies() {
   return (
-    <div id="technologies">
+    <div className="tech" id="technologies">
       <div className="main">
         <div className="section-one">
           <h2>TECHNOLOGIES</h2>
@@ -22,7 +23,7 @@ export default function Technologies() {
             learning here at Novare.
           </p>
         </div>
-        <div className="section-two">{TechList}</div>
+        <ul className="section-two">{techList}</ul>
       </div>
     </div>
   );
