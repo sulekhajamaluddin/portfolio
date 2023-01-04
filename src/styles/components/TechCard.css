@@ -1,9 +1,6 @@
 .tech-card-button {
+  width: 100px;
   background: none;
   border: none;
 }
 
-.tech-card-button img {
-  max-width: 50px;
-  height: auto;
-}
