@@ -29,7 +29,7 @@ export default function Hero() {
       <img
         className="hero__image"
         src={heroimage}
-        alt="A woman with a laptop"
+        alt="A woman sitting with a laptop"
       />
       <div className="circle hero__small-circle circle-1"></div>
       <div className="circle hero__small-circle circle-2"></div>
