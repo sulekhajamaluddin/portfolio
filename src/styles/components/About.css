@@ -76,8 +76,8 @@
 
 @media screen and (min-width: 750px) and (max-width: 1000px) {
   #about .frame-pic {
-    height: 60%;
-    width: 70%;
+    height: 65%;
+    width: 75%;
     background-color: var(--color-purple-light);
   }
 }
@@ -87,7 +87,7 @@
 @media screen and (min-width: 1001px) and (max-width: 1280px) {
   #about .frame-pic {
     height: 60%;
-    width: 60%;
+    width: 65%;
     background-color: var(--color-purple-light);
   }
 }
