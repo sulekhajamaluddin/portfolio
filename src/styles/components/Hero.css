@@ -260,10 +260,10 @@
   .circle,
   .hero__small-circle,
   .hero__medium-circle,
+  .circle-2,
   .circle-3,
   .circle-4,
-  .circle-5,
-  .circle-6 {
+  .circle-5 {
     display: none;
   }
 }
@@ -271,7 +271,7 @@
   .green-bg,
   .wave-bg,
   .circle-1,
-  .circle-2 {
+  .circle-6 {
     display: none;
   }
 }
