@@ -27,8 +27,8 @@
 }
 
 #about .frame-pic {
-  height: 70%;
-  width: 60%;
+  height: 75%;
+  width: 65%;
 }
 
 /*Phones and Phablets*/
@@ -86,7 +86,7 @@
 
 @media screen and (min-width: 1001px) and (max-width: 1280px) {
   #about .frame-pic {
-    height: 60%;
+    height: 65%;
     width: 65%;
     background-color: var(--color-purple-light);
   }
