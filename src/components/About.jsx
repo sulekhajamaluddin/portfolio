@@ -2,9 +2,9 @@ import profilepic from "../assets/womanwithpuzzle.png";
 
 export default function About() {
   return (
-    <div className="about" id="about">
-      <div className="about__section-one">
-        <div className="about__content">
+    <div id="about">
+      <div className="section-one">
+        <div className="content">
           <h2>ABOUT ME</h2>
           <p>
             I am Sulekha, an IT engineer by education following my passion to
@@ -17,10 +17,8 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="about__section-two">
-        <div className="frame">
-          <img className="frame__pic" src={profilepic} alt="A person" />
-        </div>
+      <div className="section-two">
+        <img className="frame-pic" src={profilepic} alt="A person" />
       </div>
     </div>
   );
