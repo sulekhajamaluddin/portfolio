@@ -46,7 +46,7 @@
 
 /*Media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 749px) {
   .navbar {
     display: none;
   }
@@ -82,5 +82,11 @@
     font-size: var(--text-paragraph-mobile);
     color: var(--color-purple);
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .navbar__links a {
+    font-size: var(--text-paragraph-tablet);
   }
 }

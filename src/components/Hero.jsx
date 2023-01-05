@@ -4,30 +4,30 @@ import purplecircle from "../assets/purplecircle.png";
 export default function Hero() {
   return (
     <div className="hero">
-      <div className="hero__section-one"></div>
-      <div className="hero__section-two">
-        <img src={greenwaves} alt="A green wavy background" />
+      <div className="green-background">
+        {/*To give the top part moss-green background*/}
       </div>
-      <div className="hero__frame-holder">
-        <div className="hero__frame">
+      <img src={greenwaves} alt="A green wavy background" />
+      <div className="frame-holder">
+        <div className="frame">
           <h1>
             Hi, I am Sulekha Jamaluddin,
             <br /> a passionate frontend developer.
           </h1>
         </div>
         <img
-          className="hero__circle-one"
+          className="purple-circle-big"
           src={purplecircle}
           alt="A purple colored circle"
         />
         <img
-          className="hero__circle-two"
+          className="purple-circle-small"
           src={purplecircle}
           alt="A purple colored circle"
         />
       </div>
       <img
-        className="hero__image"
+        className="hero-image"
         src={heroimage}
         alt="A woman sitting with a laptop"
       />
