@@ -23,7 +23,7 @@ p {
 
 @media screen and (min-width: 375px) and (max-width: 749px) {
   h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   h2 {
@@ -41,10 +41,16 @@ p {
 
 @media screen and (min-width: 750px) and (max-width: 1000px) {
   h1 {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   p {
     font-size: var(--text-paragraph-tablet);
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1280px) {
+  h1 {
+    font-size: 30px;
   }
 }

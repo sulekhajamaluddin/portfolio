@@ -1,13 +1,11 @@
-import greenwaves from "../assets/greenwaves.svg";
+import greenwaves from "../assets/vector.svg";
 import heroimage from "../assets/womanwithlaptop.png";
 import purplecircle from "../assets/purplecircle.png";
 export default function Hero() {
   return (
-    <div className="hero">
-      <div className="green-background">
-        {/*To give the top part moss-green background*/}
-      </div>
-      <img src={greenwaves} alt="A green wavy background" />
+    <section className="hero">
+      <div className="green-bg"></div>
+      <img className="wave-bg" src={greenwaves} alt="A green wavy background" />
       <div className="frame-holder">
         <div className="frame">
           <h1>
@@ -16,12 +14,12 @@ export default function Hero() {
           </h1>
         </div>
         <img
-          className="purple-circle-big"
+          className="purple-circle-small"
           src={purplecircle}
           alt="A purple colored circle"
         />
         <img
-          className="purple-circle-small"
+          className="purple-circle-big"
           src={purplecircle}
           alt="A purple colored circle"
         />
@@ -37,6 +35,6 @@ export default function Hero() {
       <div className="circle hero__small-circle circle-4"></div>
       <div className="circle hero__medium-circle circle-5"></div>
       <div className="circle hero__medium-circle circle-6"></div>
-    </div>
+    </section>
   );
 }

@@ -5,25 +5,27 @@
   background-color: var(--color-white-pale);
 }
 
-.green-background {
+.green-bg {
   width: 100vw;
   height: 60vh;
   background-color: var(--color-moss-green);
 }
 
+.wave-bg {
+  width: 100vw;
+}
+
 .hero .frame-holder {
-  width: 750px;
-  height: 400px;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 10;
+  z-index: 20;
 }
 
 .hero .frame {
-  width: 750px;
-  height: 400px;
+  width: 700px;
+  height: 350px;
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(25px);
   border: 2px solid rgba(255, 255, 255, 0.2);
@@ -48,13 +50,13 @@
 .purple-circle-big {
   width: 150px;
   height: 150px;
-  transform: translate(-75px, 325px);
+  transform: translate(-425px, 100px);
 }
 
 .purple-circle-small {
   width: 80px;
   height: 80px;
-  transform: translate(710px, -35px);
+  transform: translate(310px, -210px);
 }
 
 .hero-image {
@@ -97,12 +99,12 @@
 }
 
 .circle-3 {
-  bottom: 5%;
+  bottom: 25%;
   left: 0%;
 }
 
 .circle-4 {
-  bottom: 20%;
+  bottom: 15%;
   left: 40%;
   z-index: 5;
 }
@@ -119,9 +121,7 @@
   right: 2%;
 }
 
-/*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
-
-/*Media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
+/*Phones*/
 
 @media screen and (min-width: 375px) and (max-width: 549px) {
   .hero {
@@ -132,10 +132,7 @@
   .hero .frame-holder {
     width: 95%;
     height: 60%;
-    position: absolute;
     top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .hero .frame {
@@ -147,13 +144,13 @@
   .hero-image {
     width: 295px;
     height: 45%;
-    position: absolute;
     right: 10%;
     bottom: 10%;
   }
 }
 
 /*Phablets*/
+
 @media screen and (min-width: 550px) and (max-width: 749px) {
   .hero {
     width: 100vw;
@@ -162,11 +159,9 @@
 
   .hero .frame-holder {
     width: 525px;
-    height: 450px;
-    position: absolute;
+    height: 475px;
     top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .hero .frame {
@@ -178,7 +173,6 @@
   .hero-image {
     width: 295px;
     height: 45%;
-    position: absolute;
     right: 10%;
     bottom: 10%;
   }
@@ -197,16 +191,22 @@
   .hero .frame-holder {
     width: 550px;
     height: 450px;
-    position: absolute;
     top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .hero .frame {
     width: 100%;
     height: 60%;
     background-color: var(--color-white-pale);
+  }
+
+  .purple-circle-big {
+    transform: translate(-75px, 280px);
+  }
+
+  .purple-circle-small {
+    transform: translate(500px, 50px);
   }
 
   .hero-image {
@@ -229,10 +229,7 @@
   .hero .frame-holder {
     width: 600px;
     height: 500px;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 40%;
   }
 
   .hero .frame {
@@ -241,28 +238,40 @@
     background-color: var(--color-white-pale);
   }
 
+  .purple-circle-big {
+    transform: translate(-75px, 325px);
+  }
+
+  .purple-circle-small {
+    transform: translate(560px, 60px);
+  }
+
   .hero-image {
     width: 350px;
     height: 50%;
-    position: absolute;
     right: 20%;
-    bottom: 5%;
+    bottom: 2%;
   }
 }
 
-@media screen and (min-width: 375px) and (max-width: 1280px) {
-  .green-background,
+@media screen and (min-width: 375px) and (max-width: 749px) {
   .purple-circle-big,
   .purple-circle-small,
   .circle,
   .hero__small-circle,
   .hero__medium-circle,
-  .circle-1,
-  .circle-2,
   .circle-3,
   .circle-4,
   .circle-5,
   .circle-6 {
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 1280px) {
+  .green-bg,
+  .wave-bg,
+  .circle-1,
+  .circle-2 {
     display: none;
   }
 }
