@@ -48,7 +48,7 @@
     margin-bottom: var(--space-title-mobile);
   }
 
-  .grid {
+  #projects .grid {
     width: 100vw;
     grid-template-columns: repeat(2, 1fr);
     border-top: none;
