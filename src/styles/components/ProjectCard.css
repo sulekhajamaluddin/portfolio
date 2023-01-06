@@ -47,24 +47,22 @@
   background-color: rgba(255, 252, 252, 0.8);
 }
 
-/*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
+/*Phone and Phablets*/
 
-/*Media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 800px) {
   .project-card {
     width: 150px;
     height: 180px;
   }
 
   .card div {
-    height: 30px;
+    height: 50px;
     padding: 2px;
   }
 
   .card__image {
     width: 150px;
-    height: 150px;
+    height: 130px;
   }
 
   .overlay {

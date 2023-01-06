@@ -1,57 +1,83 @@
 #projects {
   width: 100vw;
-  height: 100vh;
-  background-color: var(--color-white-pale);
+  height: auto;
+  overflow: auto;
   display: flex;
+  background-color: var(--color-white-pale);
 }
 
 #projects .section-one {
   width: 40vw;
-  padding: 0 var(--space-big);
+  padding-left: var(--space-big);
+  padding-right: var(--space-big);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#projects .section-one h2 {
-  margin-bottom: var(--space-big);
+#projects h2 {
+  margin-bottom: var(--space-title);
 }
 
-.grid {
+#projects .grid {
   width: 60vw;
   padding: var(--space-medium) var(--space-medium);
   background-color: var(--color-pink-orange);
-  border-top: 80px solid var(--color-purple-light);
+  border-top: var(--space-top) solid var(--color-purple-light);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-medium);
   place-items: center;
 }
 
-/*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
+/*Phones*/
 
-/*Media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 549px) {
   #projects {
-    height: auto;
     background-color: var(--color-pink-orange);
     flex-direction: column;
   }
 
   #projects .section-one {
     width: 100vw;
-    margin-top: 80px;
+    margin-top: var(--space-top);
     padding: 0 var(--space-medium);
   }
 
-  #projects .section-one h2 {
-    margin-bottom: var(--space-medium);
+  #projects h2 {
+    margin-bottom: var(--space-title-mobile);
   }
 
   .grid {
     width: 100vw;
     grid-template-columns: repeat(2, 1fr);
+    border-top: none;
+    margin-top: var(--space-big);
+    gap: var(--space-medium);
+  }
+}
+
+/*Phablets*/
+
+@media screen and (min-width: 550px) and (max-width: 749px) {
+  #projects {
+    background-color: var(--color-pink-orange);
+    flex-direction: column;
+  }
+
+  #projects .section-one {
+    width: 100vw;
+    margin-top: var(--space-top);
+    padding: 0 var(--space-medium);
+  }
+
+  #projects h2 {
+    margin-bottom: var(--space-title-mobile);
+  }
+
+  #projects .grid {
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
     border-top: none;
     margin-top: var(--space-big);
     gap: var(--space-small);
@@ -60,56 +86,16 @@
 
 /*Tablet*/
 
-/*Ipad Mini, Ipad Air, Surface Pro 7*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .projects__section-one {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .projects__content {
-    width: 100%;
-  }
-
-  .projects__card-holder {
-    grid-template-columns: auto auto;
-    grid-gap: 20px 10px;
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  #projects .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/*Screens bigger than 1024px upto 1280px*/
+/*Larger Screens 1024px upto 1280px*/
 
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .projects__section-one {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .projects__content {
-    width: 100%;
-  }
-
-  .projects__card-holder {
-    grid-template-columns: auto auto;
-    grid-gap: 20px 35px;
-  }
-}
-
-/*Screens bigger than 1281px upto 1440px*/
-
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
-  .projects__section-one {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .projects__content {
-    width: 100%;
-  }
-
-  .projects__card-holder {
-    grid-template-columns: auto auto auto;
-    grid-gap: 35px 35px;
+@media screen and (min-width: 1001px) and (max-width: 1280px) {
+  #projects .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

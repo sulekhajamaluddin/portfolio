@@ -64,12 +64,6 @@
     height: 325px;
     background-color: var(--color-purple-light);
   }
-
-  @media screen and (min-width: 550px) and (max-width: 749px) {
-    #about {
-      height: 100vh;
-    }
-  }
 }
 
 /*Tablet*/
