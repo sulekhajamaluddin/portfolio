@@ -1,4 +1,4 @@
-export default function ProjectDetails({ project, setModal }) {
+export default function ProjectModal({ project, setModal }) {
   const handleCloseModal = () => {
     setModal(null);
   };

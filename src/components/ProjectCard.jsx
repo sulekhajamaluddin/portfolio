@@ -1,11 +1,11 @@
-import ProjectDetails from "./ProjectDetails";
+import ProjectModal from "./ProjectModal";
 
 export default function ProjectCard({ cssClass, setModal, project }) {
   const { projectID, projectName, projectCardImage, imageCardDescription } =
     project;
 
   const handleModal = (project) => {
-    setModal(<ProjectDetails project={project} setModal={setModal} />);
+    setModal(<ProjectModal project={project} setModal={setModal} />);
   };
 
   const overlay = (

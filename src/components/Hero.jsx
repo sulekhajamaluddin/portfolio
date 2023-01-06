@@ -1,6 +1,8 @@
+//Project Files
 import greenwaves from "../assets/vector.svg";
 import heroimage from "../assets/womanwithlaptop.png";
 import purplecircle from "../assets/purplecircle.png";
+
 export default function Hero() {
   return (
     <section className="hero">

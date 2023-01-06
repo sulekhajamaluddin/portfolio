@@ -7,7 +7,7 @@ import Technologies from "./Technologies";
 import TechCard from "./TechCard";
 import Contact from "./Contact";
 import ContactItem from "./ContactItem";
-import ProjectDetails from "./ProjectDetails";
+import ProjectModal from "./ProjectModal";
 import Modal from "./Modal";
 
 export {
@@ -20,6 +20,6 @@ export {
   TechCard,
   Contact,
   ContactItem,
-  ProjectDetails,
+  ProjectModal,
   Modal,
 };
