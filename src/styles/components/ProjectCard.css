@@ -70,3 +70,27 @@
     height: 180px;
   }
 }
+
+/*Large Screens*/
+
+@media screen and (min-width: 1001px) and (max-width: 1280px) {
+  .project-card {
+    width: 180px;
+    height: 180px;
+  }
+
+  .card div {
+    height: 50px;
+    padding: 2px;
+  }
+
+  .card__image {
+    width: 180px;
+    height: 130px;
+  }
+
+  .overlay {
+    width: 180px;
+    height: 180px;
+  }
+}
