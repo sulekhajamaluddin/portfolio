@@ -1,160 +1,107 @@
-.tech {
+#technologies {
   width: 100vw;
   height: 100vh;
+  overflow: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-color: var(--color-white-pale);
+  border-bottom: var(--space-top) solid var(--color-moss-green);
 }
 
-.tech__main {
-  display: flex;
-  height: 82vh;
-}
-
-.tech__section-one {
+#technologies .section-one {
   width: 40vw;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: var(--space-big);
+  padding-right: var(--space-big);
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.tech__content {
-  width: 505px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+#technologies h2 {
+  margin-bottom: var(--space-title);
 }
 
-.tech__section-two {
+#technologies .grid {
   width: 60vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.tech__card-holder {
-  width: auto;
-  height: auto;
+  padding: var(--space-medium) var(--space-medium);
+  border-top: var(--space-top) solid var(--color-purple-light);
   display: grid;
-  grid-gap: 10px 25px;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-medium);
+  place-items: center;
 }
 
-.tech__card-holder li {
-  list-style: none;
-}
+/*Phones*/
 
-.tech__section-three {
-  height: 80px;
-  width: 100%;
-  background-color: var(--color-purple-light);
-}
-
-.tech__section-four {
-  height: 80px;
-  width: 100%;
-  background-color: var(--color-moss-green);
-}
-
-/*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
-
-/*Media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .tech {
+@media screen and (min-width: 375px) and (max-width: 549px) {
+  #technologies {
     height: auto;
-  }
-
-  .tech__main {
     flex-direction: column;
-    height: auto;
   }
 
-  .tech__section-one {
+  #technologies .section-one {
     width: 100vw;
-    margin-top: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-top: var(--space-top);
+    padding: 0 var(--space-medium);
   }
 
-  .tech__content {
-    width: 95%;
-    height: 200px;
-    justify-content: space-around;
+  #technologies h2 {
+    margin-bottom: var(--space-title-mobile);
   }
 
-  .tech__section-two {
+  #technologies .grid {
     width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: none;
+    margin-top: var(--space-big);
+    gap: var(--space-medium);
   }
+}
 
-  .tech__card-holder {
-    width: auto;
+/*Phablets*/
+
+@media screen and (min-width: 550px) and (max-width: 749px) {
+  #technologies {
     height: auto;
-    grid-gap: 10px 10px;
-    grid-template-columns: auto auto auto;
+    flex-direction: column;
   }
 
-  .tech__section-three {
-    display: none;
+  #technologies .section-one {
+    width: 100vw;
+    margin-top: var(--space-top);
+    padding: 0 var(--space-medium);
+  }
+
+  #technolgies h2 {
+    margin-bottom: var(--space-title-mobile);
+  }
+
+  #technologies .grid {
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: none;
+    margin-top: var(--space-big);
+    gap: var(--space-small);
   }
 }
 
 /*Tablet*/
 
-/*Ipad Mini, Ipad Air, Surface Pro 7*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .tech__content {
-    width: 95%;
-    height: 300px;
-    justify-content: space-around;
-  }
-
-  .tech__card-holder {
-    width: auto;
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  #technologies {
     height: auto;
-    grid-gap: 10px 10px;
-    grid-template-columns: auto auto auto;
+  }
+  #technologies .grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/*Screens bigger than 1024px upto 1280px*/
+/*Larger Screens 1024px upto 1280px*/
 
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .tech__content {
-    width: 95%;
-    height: 300px;
-    justify-content: space-around;
-  }
-
-  .tech__card-holder {
-    width: auto;
+@media screen and (min-width: 1001px) and (max-width: 1280px) {
+  #technologies {
     height: auto;
-    display: grid;
-    grid-gap: 10px 10px;
-    grid-template-columns: auto auto auto;
   }
-}
-
-/*Screens bigger than 1281px upto 1440px*/
-
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
-  .tech__content {
-    width: 95%;
-    height: 300px;
-    justify-content: space-around;
-  }
-
-  .tech__card-holder {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-gap: 15px 10px;
-    grid-template-columns: auto auto auto;
+  #technologies .grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }

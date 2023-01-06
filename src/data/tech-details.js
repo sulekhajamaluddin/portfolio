@@ -8,7 +8,8 @@ import figma from "../assets/figma.svg";
 import react from "../assets/react.svg";
 import git from "../assets/git.svg";
 import postgresql from "../assets/postgresql.png";
-import mongodb from "../assets/mongodb.svg";
+import mongodb from "../assets/mongo.png";
+import node from "../assets/node.jpg";
 
 const techDetails = [
   {
@@ -67,15 +68,21 @@ const techDetails = [
   },
   {
     techID: 10,
-    techName: "PostgreSQL",
-    techIcon: `${postgresql}`,
-    iconDescription: "PostgreSQL icon",
+    techName: "NodeJS",
+    techIcon: `${node}`,
+    iconDescription: "Node icon",
   },
   {
     techID: 11,
     techName: "MongoDB",
     techIcon: `${mongodb}`,
     iconDescription: "MongoDB icon",
+  },
+  {
+    techID: 12,
+    techName: "PostgreSQL",
+    techIcon: `${postgresql}`,
+    iconDescription: "PostgreSQL icon",
   },
 ];
 

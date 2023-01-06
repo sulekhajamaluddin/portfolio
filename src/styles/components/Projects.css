@@ -1,142 +1,101 @@
-.projects {
+#projects {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  overflow: auto;
+  display: flex;
   background-color: var(--color-white-pale);
-  display: flex;
 }
 
-.projects__section-one {
+#projects .section-one {
   width: 40vw;
-  padding-left: 50px;
-  padding-right: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.projects__content {
-  width: 505px;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.projects__section-two {
-  width: 60vw;
-  height: 100vh;
+  padding-left: var(--space-big);
+  padding-right: var(--space-big);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#projects h2 {
+  margin-bottom: var(--space-title);
+}
+
+#projects .grid {
+  width: 60vw;
+  padding: var(--space-medium) var(--space-medium);
   background-color: var(--color-pink-orange);
-}
-
-.projects__card-holder {
-  width: auto;
-  height: auto;
-  padding-top: 75px;
+  border-top: var(--space-top) solid var(--color-purple-light);
   display: grid;
-  grid-gap: 40px 75px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-medium);
+  place-items: center;
 }
 
-.projects__card-holder li {
-  list-style: none;
-}
+/*Phones*/
 
-/*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
-
-/*Media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .projects {
-    height: auto;
-    flex-direction: column;
+@media screen and (min-width: 375px) and (max-width: 549px) {
+  #projects {
     background-color: var(--color-pink-orange);
+    flex-direction: column;
   }
 
-  .projects__section-one {
+  #projects .section-one {
     width: 100vw;
-    height: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-top: var(--space-top);
+    padding: 0 var(--space-medium);
   }
 
-  .projects__content {
-    margin-top: 55px;
-    width: 95%;
-    height: 200px;
-    justify-content: space-around;
+  #projects h2 {
+    margin-bottom: var(--space-title-mobile);
   }
 
-  .projects__section-two {
+  .grid {
     width: 100vw;
-    height: auto;
-    margin-bottom: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: none;
+    margin-top: var(--space-big);
+    gap: var(--space-medium);
+  }
+}
+
+/*Phablets*/
+
+@media screen and (min-width: 550px) and (max-width: 749px) {
+  #projects {
+    background-color: var(--color-pink-orange);
+    flex-direction: column;
   }
 
-  .projects__card-holder {
-    width: auto;
-    height: auto;
-    padding-top: 10px;
-    display: grid;
-    grid-gap: 20px 20px;
-    grid-template-columns: auto auto;
+  #projects .section-one {
+    width: 100vw;
+    margin-top: var(--space-top);
+    padding: 0 var(--space-medium);
+  }
+
+  #projects h2 {
+    margin-bottom: var(--space-title-mobile);
+  }
+
+  #projects .grid {
+    width: 100vw;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: none;
+    margin-top: var(--space-big);
+    gap: var(--space-small);
   }
 }
 
 /*Tablet*/
 
-/*Ipad Mini, Ipad Air, Surface Pro 7*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .projects__content {
-    width: 95%;
-    height: 300px;
-    justify-content: space-around;
-  }
-
-  .projects__card-holder {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-gap: 20px 10px;
-    grid-template-columns: auto auto;
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  #projects .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/*Screens bigger than 1024px upto 1280px*/
+/*Larger Screens 1024px upto 1280px*/
 
-@media screen and (min-width: 1025px) and (max-width: 1280px) {
-  .projects__content {
-    width: 95%;
-    height: 300px;
-    justify-content: space-around;
-  }
-
-  .projects__card-holder {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-gap: 20px 20px;
-    grid-template-columns: auto auto;
-  }
-}
-
-/*Screens bigger than 1281px upto 1440px*/
-
-@media screen and (min-width: 1281px) and (max-width: 1440px) {
-  .projects__content {
-    width: 95%;
-    height: 300px;
-    justify-content: space-around;
-  }
-
-  .projects__card-holder {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-gap: 35px 20px;
-    grid-template-columns: auto auto auto;
+@media screen and (min-width: 1001px) and (max-width: 1280px) {
+  #projects .grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
