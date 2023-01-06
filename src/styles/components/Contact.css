@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--color-white-pale);
+  overflow: auto;
 }
 
 .footer__section-one {
