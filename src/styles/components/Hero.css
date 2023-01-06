@@ -223,13 +223,13 @@
 @media screen and (min-width: 1001px) and (max-width: 1280px) {
   .hero {
     width: 100vw;
-    background-color: var(--color-moss-green);
+    /* background-color: var(--color-moss-green); */
   }
 
   .hero .frame-holder {
     width: 600px;
     height: 500px;
-    top: 40%;
+    top: 42%;
   }
 
   .hero .frame {
@@ -260,7 +260,7 @@
   .circle,
   .hero__small-circle,
   .hero__medium-circle,
-  .circle-2,
+  .circle-6,
   .circle-3,
   .circle-4,
   .circle-5 {
@@ -271,7 +271,7 @@
   .green-bg,
   .wave-bg,
   .circle-1,
-  .circle-6 {
+  .circle-2 {
     display: none;
   }
 }
