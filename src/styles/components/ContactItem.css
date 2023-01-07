@@ -1,5 +1,5 @@
 .contact-item {
-  width: 250px;
+  width: 50%;
   margin-top: var(--space-big);
   display: flex;
   justify-content: flex-start;
@@ -34,10 +34,6 @@
 }
 
 @media screen and (min-width: 750px) and (max-width: 1000px) {
-  .contact-item {
-    width: 50%;
-  }
-
   .contact-item img {
     width: 30px;
     height: 30px;
