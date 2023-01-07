@@ -10,13 +10,13 @@ import eikaproject from "../assets/eika.png";
 const projectDetails = [
   {
     projectID: 1,
-    projectName: "Eika's Shopping List",
+    projectName: "EIKA's Shopping List",
     projectDescription:
       "This is a shopping list app where users can add their favorite furnitures and track them as they buy them. This app uses:",
     projectCardImage: `${shoppinglist}`,
     imageCardDescription: "A person writing a todo list",
     projectImage: `${eikaproject}`,
-    projectImageDescription: "The screenshot of eika app running on website",
+    projectImageDescription: "The screenshot of Eika app running on website",
     technologiesUsed: [
       "ContextAPI",
       "LocalStorage",

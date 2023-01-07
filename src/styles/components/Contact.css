@@ -1,4 +1,4 @@
-.footer {
+#footer {
   height: 60vh;
   width: 100vw;
   display: flex;
@@ -8,7 +8,7 @@
   overflow: auto;
 }
 
-.footer__section-one {
+#footer .section-one {
   width: 100vw;
   height: 85%;
   display: flex;
@@ -16,32 +16,27 @@
   justify-content: center;
 }
 
-.footer__content {
+#footer .content {
   width: 40vw;
-  height: 200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: var(--space-big);
+  padding-right: var(--space-big);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
-.footer__contact-holder {
+#footer .content h2 {
+  margin-bottom: var(--space-title);
+}
+
+#footer .contact-holder {
   width: 60vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.footer__contact-list {
-  width: 250px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.footer__section-two {
+#footer .section-two {
   width: 100vw;
   height: 80px;
   background-color: var(--color-moss-green);
@@ -51,7 +46,7 @@
   justify-content: center;
 }
 
-.footer__section-two div {
+.footer .section-two div {
   display: flex;
   justify-content: space-between;
 }
@@ -59,7 +54,6 @@
 .network-icon {
   height: 30px;
   width: 30px;
-
   fill: black;
 }
 
@@ -67,38 +61,36 @@
   margin-left: 10px;
 }
 
-/*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
+/*Phones and Phablets*/
 
-/*Media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
-  .footer {
+@media screen and (min-width: 375px) and (max-width: 749px) {
+  #footer {
     height: auto;
   }
-  .footer__section-one {
+
+  #footer .section-one {
     height: auto;
     flex-direction: column;
   }
-  .footer__content {
+
+  #footer .content {
     width: 100vw;
     height: 150px;
-    margin-top: 40px;
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-top: var(--space-top);
+    padding-left: var(--space-medium);
+    padding-right: var(--space-medium);
   }
 
-  .footer__contact-holder {
-    margin-top: 5px;
-    margin-bottom: 15px;
+  #footer .content h2 {
+    margin-bottom: var(--space-title-mobile);
+  }
+
+  #footer .contact-holder {
+    margin-top: var(--space-big);
+    margin-bottom: var(--space-big);
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-  }
-
-  .footer__contact-list {
-    width: 100vw;
-    height: auto;
     align-items: center;
   }
 }

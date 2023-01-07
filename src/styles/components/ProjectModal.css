@@ -4,17 +4,13 @@
   display: flex;
 }
 
-.project-item__section-one {
+.project-item .image {
   width: 50%;
-  height: 100%;
-}
-.project-item__section-one img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.project-item__section-two {
+.project-item .project-details {
   width: 50%;
   height: 100%;
   padding: 10px;
@@ -23,19 +19,20 @@
   flex-direction: column;
 }
 
-.project-item__section-two h3 {
+.project-details h3 {
   padding: 10px 0px;
 }
 
-.project-item__section-two p {
+.project-details p {
   padding: 10px 0px;
 }
 
 .close-button {
   background-color: var(--color-white-pale);
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   border: none;
+  border-radius: 50%;
   cursor: pointer;
   position: absolute;
   top: 3%;
@@ -43,23 +40,19 @@
   font-size: inherit;
 }
 
-.project-item__pills {
-  padding: 10px 0px;
-  width: 85%;
-  height: 100px;
-  overflow-wrap: break-word;
+.tech-pills {
+  margin: 10px 0px;
 }
 
 .pill {
-  width: 15px;
-  height: 15px;
+  display: inline-block;
   border-radius: 10px;
   border: 1px solid black;
-  margin: 5px;
-  padding: 5px;
+  margin: 2.5px;
+  padding: 2.5px;
 }
 
-.project-item__links {
+.project-item .links {
   margin-top: auto;
   height: 105px;
   display: flex;
@@ -68,15 +61,15 @@
   justify-content: space-between;
 }
 
-.project-item__links button,
-.project-item__links .button {
+.project-item .links button,
+.project-item .links .button {
   height: 50px;
   width: 280px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.project-item__links .button {
+.project-item .links .button {
   background-color: none;
   border: none;
 }
@@ -91,79 +84,65 @@
   background-color: white;
 }
 
-/*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
+/*Phones and Phablets*/
 
-/*Common media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 749px) {
   .project-item {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     flex-direction: column;
+    overflow: scroll;
   }
 
-  .project-item__section-one {
+  .project-item .image {
     width: 100%;
-    height: 45%;
+    height: 30%;
+    object-fit: fill;
   }
 
-  .project-item__section-two {
+  .project-item .project-details {
     width: 100%;
-    height: 65%;
+    height: 70%;
   }
 
   .pill {
     border-radius: 5px;
   }
 
+  .project-item .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .project-item .links button,
+  .project-item .links .button {
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
   .close-button {
-    top: -65%;
-    right: 5%;
     background-color: var(--color-pink-orange);
-  }
-
-  .project-item__links {
-    margin-top: 50px;
-  }
-
-  /*Specific media queries for iPhone SE*/
-
-  @media screen and (min-width: 375px) and (max-width: 389px) {
-    .project-item__links {
-      margin-top: 20px;
-    }
-
-    .close-button {
-      top: -80%;
-      right: 2%;
-      background-color: var(--color-pink-orange);
-    }
+    top: -40%;
   }
 }
 
 /*Tablet*/
 
-/*Ipad Mini, Ipad Air*/
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 750px) and (max-width: 1000px) {
   .project-item {
     width: 100%;
     height: 100%;
   }
 
-  .project-item__section-two {
+  .project-item .image {
+    object-fit: fill;
+  }
+
+  .project-item .project-details {
     justify-content: space-between;
-  }
-
-  .pill {
-    width: 10px;
-    height: 10px;
-    border-radius: 5px;
-  }
-
-  .close-button {
-    top: 5%;
-    right: 5%;
-    background-color: var(--color-white-pale);
   }
 }

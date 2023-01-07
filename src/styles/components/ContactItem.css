@@ -1,7 +1,14 @@
 .contact-item {
+  width: 250px;
+  margin-top: var(--space-big);
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
+}
+
+.contact-item span {
+  font-size: var(--text-paragraph);
 }
 
 .contact-item img {
@@ -9,17 +16,19 @@
   height: 45px;
 }
 
-/*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
+/*Phones and Phablets*/
 
-/*Media queries for iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
-
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 749px) {
   .contact-item {
     width: 50%;
   }
 
   .contact-item img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-item span {
+    font-size: var(--text-mobile);
   }
 }

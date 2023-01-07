@@ -1,4 +1,13 @@
 export default function ProjectModal({ project, setModal }) {
+  const {
+    projectName,
+    projectDescription,
+    projectImage,
+    projectImageDescription,
+    webAddress,
+    gitAddress,
+  } = project;
+
   const handleCloseModal = () => {
     setModal(null);
   };
@@ -11,22 +20,20 @@ export default function ProjectModal({ project, setModal }) {
 
   return (
     <div className="project-item">
-      <div className="project-item__section-one">
-        <img src={project.projectImage} alt={project.projectImageDescription} />
-      </div>
-      <div className="project-item__section-two">
+      <img className="image" src={projectImage} alt={projectImageDescription} />
+      <div className="project-details">
         <div>
-          <h3>{project.projectName}</h3>
-          <p>{project.projectDescription}</p>
-          <div className="project-item__pills">{arrayOfPills}</div>
+          <h3>{projectName}</h3>
+          <p>{projectDescription}</p>
+          <div className="tech-pills">{arrayOfPills}</div>
           <button className="close-button" onClick={() => handleCloseModal()}>
             X
           </button>
         </div>
-        <div className="project-item__links">
+        <div className="links">
           <a
             className="button"
-            href={project.webAddress}
+            href={webAddress}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -34,7 +41,7 @@ export default function ProjectModal({ project, setModal }) {
           </a>
           <a
             className="button"
-            href={project.gitAddress}
+            href={gitAddress}
             target="_blank"
             rel="noopener noreferrer"
           >

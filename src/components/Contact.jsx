@@ -7,36 +7,34 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Contact() {
   return (
-    <div className="footer" id="footer">
-      <div className="footer__section-one">
-        <div className="footer__content">
+    <div id="footer">
+      <div className="section-one">
+        <div className="content">
           <h2>CONTACT</h2>
           <p>
             So, hope you liked this hueful portfolio and the projects showcased
             here. If so, here are some ways you could reach me.
           </p>
         </div>
-        <div className="footer__contact-holder">
-          <div className="footer__contact-list">
-            <ContactItem
-              iconSrc={email}
-              altText="The icon representing email"
-              text="sulu.lekha@gmail.com"
-            />
-            <ContactItem
-              iconSrc={phone}
-              altText="The icon representing phone"
-              text="+46 769726924"
-            />
-            <ContactItem
-              iconSrc={location}
-              altText="The icon representing location"
-              text="Stockholm, Sweden"
-            />
-          </div>
+        <div className="contact-holder">
+          <ContactItem
+            iconSrc={email}
+            altText="The icon representing email"
+            text="sulu.lekha@gmail.com"
+          />
+          <ContactItem
+            iconSrc={phone}
+            altText="The icon representing phone"
+            text="+46 769726924"
+          />
+          <ContactItem
+            iconSrc={location}
+            altText="The icon representing location"
+            text="Stockholm, Sweden"
+          />
         </div>
       </div>
-      <div className="footer__section-two">
+      <div className="section-two">
         <div>
           <a
             href="https://github.com/sulekhajamaluddin"
