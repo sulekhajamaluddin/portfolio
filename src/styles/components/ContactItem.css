@@ -32,3 +32,18 @@
     font-size: var(--text-mobile);
   }
 }
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  .contact-item {
+    width: 50%;
+  }
+
+  .contact-item img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-item span {
+    font-size: var(--text-tablet);
+  }
+}

@@ -5,6 +5,7 @@ export default function Projects({ setModal }) {
   const projectsList = projectDetails.map((project) => {
     return (
       <ProjectCard
+        key={project.projectID}
         cssClass={project.status}
         project={project}
         setModal={setModal}
