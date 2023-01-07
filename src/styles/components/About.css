@@ -20,15 +20,14 @@
 
 #about .section-two {
   width: 60vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #about .frame-pic {
-  height: 75%;
-  width: 65%;
+  height: 680px;
+  width: 620px;
 }
 
 /*Phones and Phablets*/
@@ -69,10 +68,23 @@
 /*Tablet*/
 
 @media screen and (min-width: 750px) and (max-width: 1000px) {
+  #about {
+    height: auto;
+  }
+
+  #about .section-one {
+    margin-top: var(--space-top);
+    margin-bottom: var(--space-top);
+  }
+
+  #about .section-two {
+    margin-top: var(--space-top);
+    margin-bottom: var(--space-top);
+  }
+
   #about .frame-pic {
-    height: 65%;
-    width: 75%;
-    background-color: var(--color-purple-light);
+    height: 550px;
+    width: 500px;
   }
 }
 
@@ -80,8 +92,7 @@
 
 @media screen and (min-width: 1001px) and (max-width: 1280px) {
   #about .frame-pic {
-    height: 75%;
-    width: 65%;
-    /* background-color: var(--color-purple-light); */
+    height: 650px;
+    width: 600px;
   }
 }
