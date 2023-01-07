@@ -34,7 +34,6 @@ export default function Hero() {
       <div className="circle hero__small-circle circle-1"></div>
       <div className="circle hero__small-circle circle-2"></div>
       <div className="circle hero__small-circle circle-3"></div>
-      <div className="circle hero__small-circle circle-4"></div>
       <div className="circle hero__medium-circle circle-5"></div>
       <div className="circle hero__medium-circle circle-6"></div>
     </section>

@@ -51,10 +51,20 @@
   justify-content: center;
 }
 
+.footer__section-two div {
+  display: flex;
+  justify-content: space-between;
+}
+
 .network-icon {
   height: 30px;
   width: 30px;
-  margin: 2.5px;
+
+  fill: black;
+}
+
+.network-icon:nth-of-type(1) {
+  margin-left: 10px;
 }
 
 /*Phones : iPhone SE, iPhone XR, iPhone 12 Pro, Samsung Galaxy S20 Ultra*/
