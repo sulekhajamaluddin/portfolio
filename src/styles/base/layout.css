@@ -11,4 +11,5 @@ html {
   font-family: "Akaya Telivigala", cursive;
   color: var(--color-grey);
   line-height: 200%;
+  scroll-behavior: smooth;
 }
