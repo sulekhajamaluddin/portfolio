@@ -2,6 +2,8 @@
 
 This React project is my little space where I showcase the work I do.
 
+Link to the project: [https://sulekhajamaluddin-portfolio.netlify.app/]https://sulekhajamaluddin-portfolio.netlify.app/
+
 ## The Navigation Bar
 
 The Navigation Bar is fixed and so the visitor can have access to it all the time and freely move around the website.
