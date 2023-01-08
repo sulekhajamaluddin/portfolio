@@ -1,10 +1,22 @@
-export default function TechCard({ imgSrc, altText, techName }) {
+import TechModal from "./TechModal";
+
+export default function TechCard({ technology, setModal }) {
+  const handleTechModal = (technology) => {
+    setModal(<TechModal technology={technology} setModal={setModal} />);
+  };
   return (
-    <button className="tech-card-button">
+    <button
+      onClick={() => handleTechModal(technology)}
+      className="tech-card-button"
+    >
       <div className="tech-card">
-        <img className="tech-card__icon" src={imgSrc} alt={altText} />
+        <img
+          className="tech-card__icon"
+          src={technology.techIcon}
+          alt={technology.iconDescription}
+        />
         <div>
-          <p>{techName}</p>
+          <p>{technology.techName}</p>
         </div>
       </div>
     </button>

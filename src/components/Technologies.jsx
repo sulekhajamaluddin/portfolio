@@ -1,16 +1,12 @@
 import TechCard from "./TechCard";
 import techDetails from "../data/tech-details";
 
-export default function Technologies() {
-  const techList = techDetails.map((tech) => {
-    const { techID, techName, techIcon, iconDescription } = tech;
+export default function Technologies({ setModal }) {
+  const techList = techDetails.map((technology) => {
+    const { techID } = technology;
     return (
       <div key={techID}>
-        <TechCard
-          techName={techName}
-          imgSrc={techIcon}
-          altText={iconDescription}
-        />
+        <TechCard technology={technology} setModal={setModal} />
       </div>
     );
   });

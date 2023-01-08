@@ -1,11 +1,20 @@
-import email from "../assets/email-icon.png";
-import phone from "../assets/phone-icon.png";
-import location from "../assets/location-icon.png";
+import contactDetails from "../data/contact-details";
 import ContactItem from "./ContactItem";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Contact() {
+  const contactList = contactDetails.map((contact) => {
+    const { contactID, contactIcon, iconDescription, text } = contact;
+    return (
+      <ContactItem
+        key={contactID}
+        iconSrc={contactIcon}
+        altText={iconDescription}
+        text={text}
+      />
+    );
+  });
   return (
     <div id="footer">
       <div className="section-one">
@@ -16,23 +25,7 @@ export default function Contact() {
             here. If so, here are some ways you could reach me.
           </p>
         </div>
-        <div className="contact-holder">
-          <ContactItem
-            iconSrc={email}
-            altText="The icon representing email"
-            text="sulu.lekha@gmail.com"
-          />
-          <ContactItem
-            iconSrc={phone}
-            altText="The icon representing phone"
-            text="+46 769726924"
-          />
-          <ContactItem
-            iconSrc={location}
-            altText="The icon representing location"
-            text="Stockholm, Sweden"
-          />
-        </div>
+        <div className="contact-holder">{contactList}</div>
       </div>
       <div className="section-two">
         <div>
