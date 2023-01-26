@@ -12,4 +12,5 @@ html {
   color: var(--color-grey);
   line-height: 200%;
   scroll-behavior: smooth;
+  background-color: var(--color-white-pale);
 }

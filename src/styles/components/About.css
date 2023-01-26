@@ -96,3 +96,10 @@
     width: 600px;
   }
 }
+
+@media screen and (min-width: 1512px) {
+  #about {
+    max-width: 1512px;
+    margin: 0 auto;
+  }
+}
