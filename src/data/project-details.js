@@ -6,6 +6,7 @@ import bbq from "../assets/bbq.jpg";
 import books from "../assets/books.jpg";
 import netflix from "../assets/netflix.png";
 import eikaproject from "../assets/eika.png";
+import beetbowl from "../assets/beetbowl.png";
 
 const projectDetails = [
   {
@@ -31,10 +32,23 @@ const projectDetails = [
   },
   {
     projectID: 2,
-    projectName: "Vegan Restaurant",
+    projectName: "Beet Bowl",
+    projectDescription:
+      "This is an app for a Vegan Restaurant, where the users can view categories and also the menu for those categories. This app uses:",
     projectCardImage: `${vegan}`,
-    imageCardDescription: "Green leaves on a board",
-    status: "comingSoon",
+    imageCardDescription: "A few green leaves on a board",
+    projectImage: `${beetbowl}`,
+    projectImageDescription: "The screenshot of Beet Bowl app running",
+    technologiesUsed: [
+      "ContextAPI",
+      "Firebase",
+      "React",
+      "CSS",
+      "React Calendar",
+    ],
+    webAddress: "https://beetbowl-vegan-restaurant.web.app/",
+    gitAddress: "https://github.com/sulekhajamaluddin/vegan-restaurant",
+    status: "completed",
   },
   {
     projectID: 3,
