@@ -7,6 +7,7 @@ import books from "../assets/books.jpg";
 import netflix from "../assets/netflix.png";
 import eikaproject from "../assets/eika.png";
 import beetbowl from "../assets/beetbowl.png";
+import tracker from "../assets/tracker.png";
 
 const projectDetails = [
   {
@@ -52,10 +53,23 @@ const projectDetails = [
   },
   {
     projectID: 3,
-    projectName: "Package Tracker",
+    projectName: "Insta Tracker",
     projectCardImage: `${packages}`,
+    projectDescription:
+      "This is an app for tracking insta packages. The user can view a list of his packages and also details about his packages including a map location. This app uses:",
     imageCardDescription: "A few packages looking scattered",
-    status: "comingSoon",
+    projectImage: `${tracker}`,
+    projectImageDescription: "The screenshot of Insta Tracker app running",
+    technologiesUsed: [
+      "Firebase",
+      "React",
+      "SCSS",
+      "Google Maps",
+      "Context API",
+    ],
+    webAddress: "https://insta-track-package.web.app/",
+    gitAddress: "https://github.com/sulekhajamaluddin/package-tracker",
+    status: "completed",
   },
   {
     projectID: 4,
