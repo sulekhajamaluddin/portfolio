@@ -6,7 +6,7 @@ import bbq from "../assets/bbq.jpg";
 import books from "../assets/books.jpg";
 import netflix from "../assets/netflix.png";
 import eikaproject from "../assets/eika.png";
-import beetbowl from "../assets/beetbowl.png";
+import beet from "../assets/beet.jpg";
 import tracker from "../assets/tracker.png";
 import tddTodo from "../assets/tdd-todo.png";
 
@@ -39,7 +39,7 @@ const projectDetails = [
       "This is an app for a Vegan Restaurant, where the users can view categories and also the menu for those categories. This app uses:",
     projectCardImage: `${vegan}`,
     imageCardDescription: "A few green leaves on a board",
-    projectImage: `${beetbowl}`,
+    projectImage: `${beet}`,
     projectImageDescription: "The screenshot of Beet Bowl app running",
     technologiesUsed: [
       "ContextAPI",
