@@ -8,6 +8,7 @@ import netflix from "../assets/netflix.png";
 import eikaproject from "../assets/eika.png";
 import beetbowl from "../assets/beetbowl.png";
 import tracker from "../assets/tracker.png";
+import tddTodo from "../assets/tdd-todo.png";
 
 const projectDetails = [
   {
@@ -75,8 +76,21 @@ const projectDetails = [
     projectID: 4,
     projectName: "TTD- Todo List",
     projectCardImage: `${todo}`,
+    projectDescription:
+      "This is a shopping list app where users can add their favorite furnitures and track them as they buy them.The main feature is that it has application level form validation and unit testing that ensures this.This app uses:",
     imageCardDescription: "A blue book with the word Todo on the cover",
-    status: "comingSoon",
+    projectImage: `${tddTodo}`,
+    projectImageDescription: "The screenshot of Insta Tracker app running",
+    technologiesUsed: [
+      "Firebase",
+      "React",
+      "SCSS",
+      "Jest",
+      "React Testing Library",
+    ],
+    webAddress: "https://todolist-108b4.web.app/",
+    gitAddress: "https://github.com/sulekhajamaluddin/Todo-List",
+    status: "completed",
   },
   {
     projectID: 5,
