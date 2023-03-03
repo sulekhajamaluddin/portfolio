@@ -6,7 +6,7 @@ import bbq from "../assets/bbq.jpg";
 import books from "../assets/books.jpg";
 import netflix from "../assets/netflix.png";
 import eikaproject from "../assets/eika.png";
-import beet from "../assets/beet.jpg";
+import beet from "../assets/beet.png";
 import tracker from "../assets/tracker.png";
 import tddTodo from "../assets/tdd-todo.png";
 
