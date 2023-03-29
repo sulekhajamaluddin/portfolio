@@ -3,6 +3,7 @@ import vegan from "../assets/vegan.jpg";
 import packages from "../assets/packages.jpg";
 import todo from "../assets/todo.jpg";
 import bbq from "../assets/bbq.jpg";
+import bbqRestaurant from "../assets/bbq.png";
 import books from "../assets/books.jpg";
 import netflix from "../assets/netflix.png";
 import eikaproject from "../assets/eika.png";
@@ -96,8 +97,16 @@ const projectDetails = [
     projectID: 5,
     projectName: "BBQ Restaurant",
     projectCardImage: `${bbq}`,
+    projectDescription:
+      "This is an app for a BBQ Restaurant, where the users can view categories and also the menu for those categories. This app uses:",
     imageCardDescription: "A plate with BBQ-ed chicken",
-    status: "comingSoon",
+    projectImage: `${bbqRestaurant}`,
+    projectImageDescription: "The screenshot of BBQ restaurant app running",
+    technologiesUsed: ["ContextAPI", "Firebase", "Firestore", "React", "SCSS"],
+    webAddress: "https://backyard-the-bbq-restaurant.web.app/",
+    gitAddress:
+      "https://github.com/sulekhajamaluddin/backyard-the-bbq-restaurant",
+    status: "completed",
   },
   {
     projectID: 6,
