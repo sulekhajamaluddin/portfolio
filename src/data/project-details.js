@@ -10,6 +10,7 @@ import eikaproject from "../assets/eika.png";
 import beet from "../assets/beet.png";
 import tracker from "../assets/tracker.png";
 import tddTodo from "../assets/tdd-todo.png";
+import mindful from "../assets/mindful.png";
 
 const projectDetails = [
   {
@@ -112,8 +113,21 @@ const projectDetails = [
     projectID: 6,
     projectName: "Learning Platform",
     projectCardImage: `${books}`,
+    projectDescription:
+      "This is an app for a Learning Platform, where the students can view courses and enroll. The teacher can add courses. This app uses:",
     imageCardDescription: "A few books piled up",
-    status: "comingSoon",
+    projectImage: `${mindful}`,
+    projectImageDescription: "The screenshot of LMS app running",
+    technologiesUsed: [
+      "ContextAPI",
+      "Reducers",
+      "Firebase",
+      "Firestore",
+      "Authentication",
+    ],
+    webAddress: "https://mindful-application.web.app/",
+    gitAddress: "https://github.com/sulekhajamaluddin/mindful-application",
+    status: "completed",
   },
   {
     projectID: 7,
