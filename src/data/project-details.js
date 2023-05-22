@@ -146,7 +146,7 @@ const projectDetails = [
       "Firestore",
       "Authentication",
     ],
-    webAddress: "https://netflix-clone-sj-2023.web.app/",
+    webAddress: "https://sulekha-video-player.web.app/",
     gitAddress: "https://github.com/sulekhajamaluddin/netflix-clone-sj-2023",
     status: "completed",
   },
