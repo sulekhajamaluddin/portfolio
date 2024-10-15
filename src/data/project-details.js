@@ -95,7 +95,7 @@ const projectDetails = [
     gitAddress: "https://github.com/sulekhajamaluddin/Todo-List",
     status: "completed",
   },
-  {
+  /*{
     projectID: 5,
     projectName: "BBQ Restaurant",
     projectCardImage: `${bbq}`,
@@ -149,7 +149,7 @@ const projectDetails = [
     webAddress: "https://sulekha-video-player.web.app/",
     gitAddress: "https://github.com/sulekhajamaluddin/netflix-clone-sj-2023",
     status: "completed",
-  },
+  },*/
 ];
 
 export default projectDetails;

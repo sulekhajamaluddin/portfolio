@@ -18,10 +18,7 @@ export default function Projects({ setModal }) {
       <div className="section-one">
         <div className="content">
           <h2>PROJECTS</h2>
-          <p>
-            Here are some projects that I have already built and some that I
-            will build during the frontend course at Novare Potential
-          </p>
+          <p>Here are some projects that I have designed and built.</p>
         </div>
       </div>
       <div className="grid">{projectsList}</div>
