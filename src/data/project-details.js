@@ -2,16 +2,16 @@ import shoppinglist from "../assets/shoppinglist.jpg";
 import vegan from "../assets/vegan.jpg";
 import packages from "../assets/packages.jpg";
 import todo from "../assets/todo.jpg";
-import bbq from "../assets/bbq.jpg";
+/*import bbq from "../assets/bbq.jpg";
 import bbqRestaurant from "../assets/bbq.png";
 import books from "../assets/books.jpg";
-import netflix from "../assets/netflix.png";
+import netflix from "../assets/netflix.png";*/
 import eikaproject from "../assets/eika.png";
 import beet from "../assets/beet.png";
 import tracker from "../assets/tracker.png";
 import tddTodo from "../assets/tdd-todo.png";
-import mindful from "../assets/mindful.png";
-import netflix_clone from "../assets/netflix-clone.png";
+/*import mindful from "../assets/mindful.png";
+import netflix_clone from "../assets/netflix-clone.png";*/
 
 const projectDetails = [
   {
