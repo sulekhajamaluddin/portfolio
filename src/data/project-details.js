@@ -51,7 +51,7 @@ const projectDetails = [
       "CSS",
       "React Calendar",
     ],
-    webAddress: "https://beetbowl-vegan-restaurant.web.app/",
+    webAddress: "https://beetbowl-vegan-restaurant.netlify.app/",
     gitAddress: "https://github.com/sulekhajamaluddin/vegan-restaurant",
     status: "completed",
   },
