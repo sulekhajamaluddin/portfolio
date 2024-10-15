@@ -95,61 +95,6 @@ const projectDetails = [
     gitAddress: "https://github.com/sulekhajamaluddin/Todo-List",
     status: "completed",
   },
-  /*{
-    projectID: 5,
-    projectName: "BBQ Restaurant",
-    projectCardImage: `${bbq}`,
-    projectDescription:
-      "This is an app for a BBQ Restaurant, where the users can view categories and also the menu for those categories. This app uses:",
-    imageCardDescription: "A plate with BBQ-ed chicken",
-    projectImage: `${bbqRestaurant}`,
-    projectImageDescription: "The screenshot of BBQ restaurant app running",
-    technologiesUsed: ["ContextAPI", "Firebase", "Firestore", "React", "SCSS"],
-    webAddress: "https://backyard-the-bbq-restaurant.web.app/",
-    gitAddress:
-      "https://github.com/sulekhajamaluddin/backyard-the-bbq-restaurant",
-    status: "completed",
-  },
-  {
-    projectID: 6,
-    projectName: "Learning Platform",
-    projectCardImage: `${books}`,
-    projectDescription:
-      "This is an app for a Learning Platform, where the students can view courses and enroll. The teacher can add courses. This app uses:",
-    imageCardDescription: "A few books piled up",
-    projectImage: `${mindful}`,
-    projectImageDescription: "The screenshot of LMS app running",
-    technologiesUsed: [
-      "ContextAPI",
-      "Reducers",
-      "Firebase",
-      "Firestore",
-      "Authentication",
-    ],
-    webAddress: "https://mindful-application.web.app/",
-    gitAddress: "https://github.com/sulekhajamaluddin/mindful-application",
-    status: "completed",
-  },
-  {
-    projectID: 7,
-    projectName: "Netflix Clone",
-    projectCardImage: `${netflix}`,
-    projectDescription:
-      "This is an app for a Learning Platform, where the students can view courses and enroll. The teacher can add courses. This app uses:",
-    imageCardDescription: "The word Netflix",
-    projectImage: `${netflix_clone}`,
-    projectImageDescription: "The screenshot of Netflix app running",
-    technologiesUsed: [
-      "ContextAPI",
-      "Reducers",
-      "Firebase",
-      "Firestore",
-      "Authentication",
-    ],
-    webAddress: "https://sulekha-video-player.web.app/",
-    gitAddress: "https://github.com/sulekhajamaluddin/netflix-clone-sj-2023",
-    status: "completed",
-  },*/
 ];
 
 export default projectDetails;
