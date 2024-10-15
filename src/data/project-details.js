@@ -4,14 +4,14 @@ import packages from "../assets/packages.jpg";
 import todo from "../assets/todo.jpg";
 import bbq from "../assets/bbq.jpg";
 import bbqRestaurant from "../assets/bbq.png";
-/*import books from "../assets/books.jpg";
-import netflix from "../assets/netflix.png";*/
+/*import books from "../assets/books.jpg";*/
+import netflix from "../assets/netflix.png";
 import eikaproject from "../assets/eika.png";
 import beet from "../assets/beet.png";
 import tracker from "../assets/tracker.png";
 import tddTodo from "../assets/tdd-todo.png";
-/*import mindful from "../assets/mindful.png";
-import netflix_clone from "../assets/netflix-clone.png";*/
+/*import mindful from "../assets/mindful.png";*/
+import netflix_clone from "../assets/netflix-clone.png";
 
 const projectDetails = [
   {
@@ -108,6 +108,26 @@ const projectDetails = [
     webAddress: "https://backyard-the-bbq-restaurant.web.app/",
     gitAddress:
       "https://github.com/sulekhajamaluddin/backyard-the-bbq-restaurant",
+    status: "completed",
+  },
+  {
+    projectID: 7,
+    projectName: "Netflix Clone",
+    projectCardImage: `${netflix}`,
+    projectDescription:
+      "This is an app for a Learning Platform, where the students can view courses and enroll. The teacher can add courses. This app uses:",
+    imageCardDescription: "The word Netflix",
+    projectImage: `${netflix_clone}`,
+    projectImageDescription: "The screenshot of Netflix app running",
+    technologiesUsed: [
+      "ContextAPI",
+      "Reducers",
+      "Firebase",
+      "Firestore",
+      "Authentication",
+    ],
+    webAddress: "https://sulekha-video-player.web.app/",
+    gitAddress: "https://github.com/sulekhajamaluddin/netflix-clone-sj-2023",
     status: "completed",
   },
 ];
